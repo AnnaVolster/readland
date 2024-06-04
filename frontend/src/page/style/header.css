@@ -1,0 +1,322 @@
+@import 'home.css';
+
+.frame-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 27px 0 0 0;
+    min-width: 0;
+    max-height: 64px;
+    gap: 54px;
+    z-index: 265;
+}
+
+/* Стилизация списка меню */
+.frame-2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 30px;
+    gap: 32px; /* Расстояние между элементами */
+}
+
+/* Стилизация каждого элемента списка */
+.frame-2 li {
+    position: relative; /* Для позиционирования псевдоэлементов */
+}
+
+.container {
+    margin-bottom: 27px;
+    z-index: 265;
+}
+
+.catalog {
+    height: 30px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    white-space: nowrap;
+    margin-right: 6px; /* Убедитесь, что текст имеет отступ справа */
+    z-index: 269;
+}
+
+.vector-6 {
+    width: 16px;
+    height: 9px;
+    background: url(../../assets/images/icon_fallout.png) no-repeat center;
+    background-size: cover;
+    transition: transform 0.3s ease;
+    z-index: 271;
+}
+
+.frame-4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 6px;
+    position: relative;
+    width: 125px;
+    z-index: 268;
+}
+
+.frame-7 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 16px;
+    position: relative;
+    min-width: 470px;
+    height: 64px;
+    padding: 16px 22px 16px 22px;
+    background: #efefef;
+    z-index: 275;
+    overflow: hidden;
+    border-radius: 82px;
+}
+
+.frame-7 input {
+    position: absolute;
+    width: 470px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+}
+
+.frame-8 {
+    display: flex; /* Гарантирует горизонтальное выравнивание содержимого */
+    cursor: pointer;
+    max-width: 32px;
+    background-color: transparent; /* Для интеграции с полем поиска */
+    border: none; /* Убираем стандартную рамку, если она не нужна */
+}
+
+.frame-8 button {
+    display: flex;
+    border: none; /* Убирает границу */
+    background: none; /* Убирает фон */
+    cursor: pointer; /* Указатель при наведении */
+    width: 32px; /* Ширина кнопки */
+    height: 32px; /* Высота кнопки */
+    padding: 0; /* Убирает внутренние отступы */
+    margin: 0; /* Убирает внешние отступы */
+    outline: none; /* Убирает контур при фокусировке */
+}
+
+
+.vector-9 {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    background: url(../../assets/images/icon_find.png) no-repeat center;
+    background-size: contain;
+    z-index: 277;
+    border: none;
+}
+
+
+.search {
+    flex-shrink: 0;
+    position: relative;
+    width: 200px;
+    height: 30px;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    z-index: 278;
+    overflow: hidden;
+}
+
+.frame-a {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 18px;
+    position: relative;
+    width: 182px;
+    height: 32px;
+    z-index: 279;
+}
+
+.favorite-light {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 280;
+}
+
+.vector-stroke {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../../assets/images/icon_favorite.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 281;
+}
+
+.box-alt {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../../assets/images/icon_box.png) no-repeat center;
+    background-size: cover;
+    z-index: 282;
+}
+
+.frame-b {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 283;
+    overflow: hidden;
+}
+
+.vector-c {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../../assets/images/icon_busket.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 284;
+}
+
+.user {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 285;
+}
+
+.ellipse-stroke {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../../assets/images/icon_user.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 287;
+}
+
+.sign_out_button, .frame-b, .box-alt {
+    border: none;
+    background: transparent;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.sign-out {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../../assets/images/Sign_out.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 287;
+}
+
+.readland {
+    flex-shrink: 0;
+    position: relative;
+    height: 31px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+    z-index: 266;
+}
+
+.vector-6 {
+    transition: transform 0.5s ease;
+}
+
+.vector-6.rotated {
+    transform: rotate(180deg);
+}
+
+/* Стиль для DropdownMenu */
+.dropdown-menu {
+    display: none; /* Начальное состояние скрыто */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.frame-4:hover .dropdown-menu {
+    display: block; /* Показать меню при наведении */
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Стили для основного меню */
+.menu-links a {
+    text-decoration: none; /* Убираем подчеркивание */
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 269;
+}
+
+/* Стили для элементов дропдауна */
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-family: Lora, var(--default-font-family);
+    font-size: 16px;
+}
+
+.frame-b {
+    position: relative;
+}
+
+.cart-count {
+    background-color: red; /* Устанавливает цвет фона красным */
+    color: white; /* Устанавливает цвет текста белым */
+    border-radius: 50%; /* Делаем элемент круглым */
+    padding: 0.2em 0.6em; /* Добавляем немного отступов */
+    font-size: 1em; /* Уменьшаем размер шрифта */
+    font-weight: bold; /* Делаем текст жирным */
+    display: inline-block; /* Делаем элемент блочно-строчным */
+    position: absolute; /* Позиционируем элемент абсолютно */
+    top: -1px;
+    right: 0px;
+    z-index: 1000; /* Устанавливаем высокий z-index, чтобы элемент был выше других */
+}
+

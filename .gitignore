@@ -1,0 +1,5 @@
+backend/readland/store/__pycache__/
+__pycache__
+backend/.idea/
+backend/readland/readland/settings.py
+backend/readland/openai_key.env

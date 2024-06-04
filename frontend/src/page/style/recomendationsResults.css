@@ -1,0 +1,316 @@
+.main-recomendations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.favorite-genres {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.genre-star, .authors-instruction {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.genres-grid, .authors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.genre-item, .author-item {
+    background-color: #eee;
+    padding: 10px 20px;
+    max-width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.genre-item.selected, .author-item.selected {
+    background-color: #4caf50;
+    color: white;
+}
+
+.continue-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.keywords-textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.recommendations-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.recommendations-container h2 {
+    margin-bottom: 20px;
+}
+
+.recommendations-container p {
+    font-size: 18px;
+    white-space: pre-line;
+}
+.button_next{
+    margin-bottom: 64px;
+}
+.recommendations-results {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.recommendations-text {
+    white-space: pre-wrap; /* Позволяет переносить длинные строки */
+    word-wrap: break-word; /* Переносит длинные слова */
+    line-height: 1.6; /* Улучшает читаемость */
+}
+.recommendations-button, .author-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    width: 280px;
+    height: 69px;
+    padding: 22px 72px 22px 72px;
+    cursor: pointer;
+    background: #111111;
+    border: none;
+    text-decoration-color: #FFFFFF;
+    z-index: 5;
+    overflow: hidden;
+    margin-top: 32px;
+    border-radius: 82px;
+}
+
+
+.keywords-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    width: 320px;
+    height: 69px;
+    padding: 22px 72px 22px 72px;
+    cursor: pointer;
+    background: #111111;
+    border: none;
+    text-decoration-color: #FFFFFF;
+    z-index: 5;
+    overflow: hidden;
+    margin-top: 32px;
+    border-radius: 82px;
+}
+.recommendations-button:disabled {
+    background: #cccccc;
+}
+.author-button:disabled{
+    background: #cccccc;
+}
+
+.keywords-button:disabled{
+    background: #cccccc;
+}
+.recommendations-button span, .author-button span {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: #ffffff;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+
+}
+.keywords-button span{
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: #ffffff;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+}
+.keywords-input textarea  {
+    position: relative;
+    width: 459px;
+    height: 56px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    z-index: 6;
+    margin-top: 48px;
+    overflow: hidden;
+    border-radius: 12px;
+
+}
+.recommendations-text p{
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    z-index: 6;
+}
+
+.recommendations-results a {
+    text-decoration: none; /* Убираем подчеркивание */
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: #111111;
+    max-width: 250px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 269;
+}
+
+/* Псевдоэлемент для создания линии под текстом */
+.recommendations-results a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 0; /* Позиционирование подчеркивания снизу */
+    left: 0; /* Начало подчеркивания слева */
+}
+
+/* Расширяем линию при наведении */
+.recommendations-results a:hover::after {
+    width: 100%;
+}
+
+.author-container ul{
+
+    list-style-type: none;
+}
+.author-container li{
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.genres-selection h1{
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 85px;
+    text-align: left;
+    z-index: 3;
+}
+.author-container h1{
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 85px;
+    text-align: left;
+    z-index: 3;
+}
+.keywords-input h1{
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 85px;
+    text-align: left;
+    z-index: 3;
+}
+.recommendations-results-33 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 72px;
+    position: relative;
+    width: 1920px;
+    height: 1527px;
+    top: 200px;
+    left: -480px;
+    z-index: 73;
+}
+.recommendations-results-34 {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr); /* Устанавливает 4 колонки равной ширины */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap: 27px;
+    position: relative;
+    top: -100px;
+    width: 1920px;
+    z-index: 74;
+}
+
+.reccomendations-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 69px;
+    top: -200px;
+    left: 8px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+}
+.repeat{
+    position: relative;
+    top: -95px;
+    left: 10px;
+}

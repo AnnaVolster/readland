@@ -1,0 +1,12 @@
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Устанавливает 4 колонки равной ширины */
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 27px;
+    position: relative;
+    width: 1236px;
+    padding-left: 48px;
+    z-index: 74;
+}

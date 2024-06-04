@@ -1,0 +1,420 @@
+.frame-div-ff {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 876px;
+    height: 172px;
+    color: #ffffff;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    z-index: 293;
+}
+
+.frame-div-100 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 18px;
+    position: relative;
+    width: 465px;
+    z-index: 294;
+    overflow: hidden;
+}
+.frame-div-101 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 465px;
+    padding: 16px 22px 16px 22px;
+    background: #ffffff;
+    z-index: 295;
+    overflow: hidden;
+    border-radius: 82px;
+}
+.try-span {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 27px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 296;
+}
+.button-try {
+    flex-shrink: 0;
+    position: absolute;
+    width: 465px;
+    height: 59px;
+    top: 0;
+    left: 0;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 297;
+    outline: none;
+}
+.rectangle-div-102 {
+    position: absolute;
+    width: 100%;
+    height: 665px;
+    top: 88.56%;
+    left: -0.05%;
+    background: #efefef;
+    z-index: 290;
+}
+.frame-div-103 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 720px;
+    position: relative;
+    width: 1652px;
+    height: 236px;
+    margin: 186px 0 0 135px;
+    z-index: 298;
+}
+.frame-div-104 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 46px;
+    position: relative;
+    width: 330px;
+    z-index: 299;
+}
+.frame-div-105 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 34px;
+    position: relative;
+    width: 330px;
+    z-index: 300;
+}
+.readland-div {
+    flex-shrink: 0;
+    position: relative;
+    height: 32px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 301;
+}
+.find-books-span-106 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 330px;
+    height: 59px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-overflow: initial;
+    z-index: 302;
+    overflow: hidden;
+}
+.social-icons-div {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 92px;
+    padding: 0 2px 0 2px;
+    z-index: 303;
+}
+.social-icons-div-107 {
+    flex-shrink: 0;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    z-index: 304;
+    overflow: hidden;
+}
+.vector-div-108 {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    background: url(../../assets/images/vk.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 305;
+}
+.social-icons-div-109 {
+    flex-shrink: 0;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    z-index: 306;
+    overflow: hidden;
+}
+.vector-div-10a {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    background: url(../../assets/images/tg.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 307;
+}
+.frame-div-10b {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 155px;
+    position: relative;
+    width: 606px;
+    z-index: 308;
+}
+.frame-div-10c {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 34px;
+    position: relative;
+    width: 234px;
+    z-index: 309;
+}
+.help-menu-span {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 4px;
+    z-index: 310;
+}
+.about-features-works-span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 234px;
+    height: 152px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    text-overflow: initial;
+    z-index: 311;
+    overflow: hidden;
+}
+.frame-div-10d {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 34px;
+    position: relative;
+    width: 217px;
+    z-index: 312;
+}
+.help-menu-span-10e {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 4px;
+    z-index: 313;
+}
+.about-features-works-span-10f {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 217px;
+    height: 178px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    z-index: 314;
+}
+.line-div {
+    position: relative;
+    width: 1652px;
+    height: 2px;
+    margin: 65px 0 0 134px;
+    background: url(../../assets/images/line.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 291;
+}
+
+.badge-div {
+    flex-shrink: 0;
+    position: relative;
+    width: 62px;
+    height: 40px;
+    background: #ffffff;
+    border: 0.3px solid #d6dce5;
+    z-index: 316;
+    border-radius: 8px;
+    box-sizing: content-box;
+    box-shadow: 0 0.6px 5px 0 rgba(183, 183, 183, 0.08);
+}
+.mir-div {
+    position: relative;
+    width: 49px;
+    height: 14px;
+    margin: 12px 0 0 6px;
+    z-index: 317;
+    overflow: visible auto;
+}
+.vector-div-111 {
+    position: relative;
+    width: 49px;
+    height: 14px;
+    margin: 0;
+    background: url(../../assets/images/mir.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 318;
+}
+.badge-div-112 {
+    flex-shrink: 0;
+    position: relative;
+    width: 62px;
+    height: 40px;
+    background: #ffffff;
+    border: 0.3px solid #d6dce5;
+    z-index: 319;
+    border-radius: 8px;
+    box-sizing: content-box;
+    box-shadow: 0 0.6px 5px 0 rgba(183, 183, 183, 0.08);
+}
+.visa-div {
+    position: relative;
+    width: 43px;
+    height: 14px;
+    margin: 13px 0 0 9px;
+    background: url(../../assets/images/visa.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 320;
+}
+.badge-div-113 {
+    flex-shrink: 0;
+    position: relative;
+    width: 62px;
+    height: 40px;
+    background: #ffffff;
+    border: 0.3px solid #d6dce5;
+    z-index: 321;
+    border-radius: 7px;
+    box-sizing: content-box;
+    box-shadow: 0 0 5px 0 rgba(183, 183, 183, 0.08);
+}
+.mastercard-div {
+    position: relative;
+    width: 33px;
+    height: 20px;
+    margin: 9px 0 0 14px;
+    background: url(../../assets/images/mastercard.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 322;
+}
+.copyright-span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: 78%;
+    left: 7%;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 323;
+}
+.footer-container{
+    width: 1652px;
+    height: 818px;
+}
+.find-books-span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 1652px;
+    height: 276px;
+    top: 85.94%;
+    left: 6.94%;
+    padding: 48px 85px 48px 85px;
+    margin-bottom: 64px;
+    background: #111111;
+    z-index: 292;
+    overflow: hidden;
+    border-radius: 26px;
+}

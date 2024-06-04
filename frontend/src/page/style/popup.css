@@ -1,0 +1,356 @@
+.login {
+    position: relative;
+    color: #ffffff;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: underline;
+    z-index: 5000;
+}
+
+.popup-login-content {
+    background: white;
+    padding: 20px;
+    width: 540px;
+    height: 580px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    position: relative;
+}
+.popup-register-content{
+    background: white;
+    padding: 20px;
+    width: 540px;
+    height: 650px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    position: relative;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Значение z-index выше обычного */
+}
+
+
+.frame-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    margin-left: 20px;
+    position: relative;
+    width: 459px;
+    z-index: 1;
+}
+.popup-title {
+    display: block; /* Flex не нужен для одиночного текстового элемента */
+    width: auto; /* Убираем фиксированную ширину */
+    height: auto; /* Убираем фиксированную высоту */
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-left: 20px;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    position: relative;
+    width: 459px;
+    z-index: 3;
+}
+.frame-2q {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 27px;
+    z-index: 4;
+}
+.login-input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 0;
+    left: 0;
+    color: #666666;
+    font-family: Lora, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+}
+.text-field, .text-field-6 {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 459px;
+    height: 56px;font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    z-index: 6;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.email-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    position: relative;
+    width: 459px;
+    z-index: 7;
+}
+.frame-4q {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 27px;
+    z-index: 8;
+}
+.password-input, .email-input, .confirm-password-input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 0;
+    left: 0;
+    color: #666666;
+    font-family: Lora, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9;
+}
+.password-hide {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 8px;
+    position: absolute;
+    width: 97px;
+    height: 24px;
+    left: 360px;
+    z-index: 10;
+}
+
+.text-hide {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 65px;
+    height: 23px;
+    color: rgba(102, 102, 102, 0.8);
+    font-family: Lora, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: right;
+    cursor: pointer;
+    white-space: nowrap;
+    z-index: 11;
+}
+.icon-hidden {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: url(../../assets/images/icon-password-hide.png) no-repeat center;
+    background-size: contain;
+    z-index: 13;
+}
+
+.icon-visible {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: url(../../assets/images/view.svg) no-repeat center;
+    background-size: contain;
+    z-index: 14;
+}
+
+.frame-7q {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 459px;
+    z-index: 16;
+}
+.button {
+    flex-shrink: 0;
+    position: relative;
+    width: 459px;
+    height: 56px;
+    background: #111111;
+    opacity: 0.25;
+    z-index: 17;
+    overflow: hidden;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.active {
+    background: #111111;
+    opacity: 1; /* Обновите opacity для активного состояния */
+}
+
+.sign-up {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-family: Lora, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    white-space: nowrap;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.sign-up:disabled {
+    cursor: not-allowed;
+}
+
+
+.frame-8q {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 205px;
+    position: relative;
+    width: 129px;
+    z-index: 19;
+}
+.have-an-account {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 2px 2px 2px 2px;
+}
+
+.login-a{
+    display: flex;
+}
+.no-account{
+    font-family: Lora, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 20px;
+}
+.register-link {
+    text-decoration: none; /* Убираем подчеркивание */
+    font-family: Lora, var(--default-font-family);
+    color: #111111;
+    font-size: 16px;
+    width: 170px;
+    font-weight: 500;
+    line-height: 26px;
+    cursor: pointer;
+}
+.forgot-password{
+    font-family: Lora, var(--default-font-family);
+    color: #111111;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    cursor: pointer;
+}
+.frame-9{
+    margin-top: 64px;
+}
+
+.icon-close-button{
+    position: relative;
+    margin-left: 455px;
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    border-style: none;
+    background: url(../../assets/images/close_icon.svg)
+    no-repeat center;
+    z-index: 300;
+
+}
+.popup a {
+    text-decoration: none;
+    font-family: Lora, var(--default-font-family);
+    color: #111111;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.popup a:hover {
+    text-decoration: underline;
+}
+
+/* Псевдоэлемент для создания линии под текстом */
+.popup a::after {
+    text-decoration: none;
+}
+
+/* Расширяем линию при наведении */
+.popup a:hover::after {
+    text-decoration: none;
+}
+.error{
+    color: #ff3333;
+}

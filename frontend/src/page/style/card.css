@@ -1,0 +1,755 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.card-container {
+    overflow: hidden;
+}
+
+.card-container,
+.card-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.card-container {
+    position: relative;
+    width: 1920px;
+    height: 1936px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+.frame {
+    position: relative;
+    width: 1920px;
+    height: 50px;
+    margin: 0 0 0 0;
+    background: #111111;
+    z-index: 93;
+    overflow: hidden;
+}
+.lineq {
+    position: relative;
+    width: 1653px;
+    height: 2px;
+    margin: 30px 0 0 134px;
+    background: url(../../assets/images/Line9.svg)
+    no-repeat center;
+    background-size: cover;
+    z-index: 5;
+}
+
+.line5{
+    position: relative;
+    width: 889px;
+    height: 2px;
+    margin: 30px 0 0 134px;
+    background: url(../../assets/images/Line5.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 5;
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 218px;
+    margin: 32px 0 0 133px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 6px;
+    position: relative;
+    width: 112px;
+    z-index: 1;
+}
+.navigation_main-page {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+}
+.side {
+    flex-shrink: 0;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background: url(../../assets/images/side_arrow.png) no-repeat center;
+    background-size: cover;
+    z-index: 3;
+    overflow: hidden;
+}
+.navigation_cart {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+}
+.cart-h {
+    display: block;
+    position: relative;
+    height: 69px;
+    margin: 32px 0 0 133px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+}
+.cart-flex {
+    position: relative;
+    width: 1653px;
+    height: 676px;
+    margin: 32px 0 0 133px;
+    z-index: 67;
+}
+.cartlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 32px;
+    position: absolute;
+    width: 953px;
+    min-height: 676px; /* Минимальная высота */
+    top: 0;
+    left: 0;
+    padding: 26px 32px 26px 32px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 7;
+    verflow: auto; /* Добавьте прокрутку, если содержимое превышает высоту контейнера */
+    border-radius: 26px;
+}
+
+.cartlist {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 21px;
+    position: relative;
+    min-width: 0;
+    z-index: 8;
+}
+.cart-book-image {
+    flex-shrink: 0;
+    position: relative;
+    width: 165px;
+    height: 165px;
+    background: #f0eeed;
+    z-index: 9;
+    overflow: hidden;
+    border-radius: 11px;
+}
+.image-book-cart {
+    position: relative;
+    width: 90px;
+    height: 145px;
+    margin: 11px 0 0 36px;
+    background-size: cover;
+    z-index: 10;
+}
+.book-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    position: relative;
+    z-index: 11;
+}
+.book-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 18px;
+    position: relative;
+    width: 292px;
+    height: 157px;
+    z-index: 12;
+}
+.book-info-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 2px;
+    position: relative;
+    width: 292px;
+    z-index: 13;
+}
+.small-women {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 14;
+}
+.author-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 5px;
+    position: relative;
+    width: 161px;
+    z-index: 15;
+}
+.louisa-may-alcott {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 23px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 16;
+}
+.cart-price {
+    flex-shrink: 0;
+    position: relative;
+    width: 82px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 17;
+}
+.price-count {
+    position: relative;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+}
+.currency {
+    position: relative;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+}
+.book-info-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 300px;
+    height: 165px;
+    z-index: 18;
+}
+.delete-book-info {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 19;
+    overflow: hidden;
+}
+.icon-delete {
+    position: relative;
+    width: 24px;
+    height: 26px;
+    margin: 2px 0 0 4px;
+    background: url(../../assets/images/icon-delete.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 20;
+}
+.count-items-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 26.667px;
+    position: relative;
+    width: 168px;
+    padding: 16px 26.667px 16px 26.667px;
+    cursor: pointer;
+    background: #efefef;
+    border: none;
+    z-index: 21;
+    overflow: hidden;
+    border-radius: 82.667px;
+}
+.minus-icon-info {
+    flex-shrink: 0;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    z-index: 22;
+    overflow: hidden;
+}
+.icon-minus {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    margin: 12px 0 0 2px;
+    background: url(../../assets/images/icon-minus.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 23;
+}
+.count-items {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 24;
+}
+.plus-icon-info {
+    flex-shrink: 0;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    z-index: 25;
+    overflow: hidden;
+}
+.icon-plus {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 2px 0 0 2px;
+    background: url(../../assets/images/icon-plus.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 26;
+}
+.total-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 32px;
+    position: absolute;
+    width: 673px;
+    height: 610px;
+    top: 0;
+    left: 980px;
+    padding: 26px 32px 26px 32px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 67;
+    overflow: hidden;
+    border-radius: 26px;
+}
+.total-h {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 68;
+}
+.total-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 26px;
+    position: relative;
+    min-width: 0;
+    z-index: 69;
+}
+.items-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 70;
+}
+.span-products {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 71;
+}
+.span-currency {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 66px;
+    height: 33px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 72;
+}
+.discount-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 73;
+}
+.span-discount {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 74;
+}
+.span-negative-ruble {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 78px;
+    height: 33px;
+    color: #ff3333;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 75;
+}
+.delivery-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 76;
+}
+.span-delivery {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 77;
+}
+.span-currency-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 65px;
+    height: 33px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 78;
+}
+.div-lineq {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    height: 2px;
+    background: url(../../assets/images/Line6.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 79;
+}
+.total-sum-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 80;
+}
+.total-sum-title {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 81;
+}
+.total-sum-info {
+    flex-shrink: 0;
+    position: relative;
+    width: 82px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: right;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 82;
+}
+.span-total-sum {
+    position: relative;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: right;
+}
+.span-total-currency {
+    position: relative;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: right;
+}
+.promocode-container {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    min-width: 0;
+    z-index: 83;
+}
+.promocode-input {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 418px;
+    padding: 16px 21.333px 16px 21.333px;
+    background: #efefef;
+    z-index: 84;
+    overflow: hidden;
+    border-radius: 82.667px;
+}
+.promocode-icon {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 85;
+    overflow: hidden;
+}
+.promocode {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 3px 0 0 3px;
+    background: url(../../assets/images/promocode.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 86;
+}
+.span-promocode {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 87;
+}
+.promocode-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 176px;
+    padding: 16px 22px 16px 22px;
+    cursor: pointer;
+    background: #000000;
+    border: none;
+    z-index: 88;
+    overflow: hidden;
+    border-radius: 82px;
+}
+.promocode-span-apply {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: #ffffff;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 89;
+}
+.result-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    min-width: 0;
+    height: 80px;
+    padding: 22px 72px 22px 72px;
+    cursor: pointer;
+    background: #000000;
+    border: none;
+    z-index: 90;
+    overflow: hidden;
+    border-radius: 82px;
+}
+.result-h {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: #ffffff;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 91;
+}
+.result-icon {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../../assets/images/result-icon.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 92;
+    overflow: hidden;
+}

@@ -1,0 +1,164 @@
+
+.catalog-container,
+.catalog-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.catalog-container {
+    position: relative;
+    width: 1920px;
+    height: 2912px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.frame-e {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 101px;
+    margin: 32px 0 0 133px;
+}
+.frame-f {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 5px;
+    position: relative;
+    width: 85px;
+    z-index: 1;
+}
+.catalog-10 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+}
+.text {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+}
+
+.literature-genres {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 69px;
+    top: -310px;
+    left: 8px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+}
+.scientific-literature-69{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 69px;
+    left: 165px;
+    top: -170px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+}
+.line {
+    position: relative;
+    width: 1653px;
+    height: 2px;
+    margin: 30px 0 0 134px;
+    background: url(../../assets/images/Line9.svg)
+    no-repeat center;
+    background-size: cover;
+    z-index: 4;
+}
+.frame-69 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 26px;
+    position: relative;
+    width: 1654px;
+    margin: 56px 0 0 133px;
+    z-index: 114;
+}
+
+.frame-33 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 72px;
+    position: absolute;
+    width: 1236px;
+    height: 1527px;
+    top: 370px;
+    left: 563px;
+    z-index: 73;
+}
+
+.frame-34 {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr); /* Устанавливает 4 колонки равной ширины */
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 27px;
+    position: relative;
+    width: 1236px;
+    top: -210px;
+    left: 505px;
+    z-index: 74;
+}
+.frame-6a {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 27px;
+    position: relative;
+    top: -155px;
+    left: 505px;
+    width: 1236px;
+    z-index: 74;
+}

@@ -1,0 +1,740 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.order-container {
+    overflow: hidden;
+}
+
+.order-container,
+.order-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.order-container {
+    position: relative;
+    width: 1920px;
+    height: 1844px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+.frame {
+    position: relative;
+    width: 1920px;
+    height: 50px;
+    margin: 0 0 0 0;
+    background: #111111;
+    z-index: 33;
+    overflow: hidden;
+}
+.order-h {
+    display: block;
+    position: relative;
+    height: 69px;
+    margin: 32px 0 0 133px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9;
+}
+.order-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 32px;
+    position: absolute;
+    width: 673px;
+    height: 587px;
+    top: 368px;
+    left: 1113px;
+    padding: 26px 32px 26px 32px;
+    border: 1.333px solid rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 26.667px;
+}
+.order-card-info {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 210px;
+    z-index: 11;
+}
+.tovar {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #0061d9;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 12;
+}
+.bullet {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #0061d9;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 13;
+}
+.kg {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #0061d9;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 14;
+}
+.order-total {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 15;
+}
+.order-total-sum-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 26px;
+    position: relative;
+    min-width: 0;
+    z-index: 16;
+}
+.order-total-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 17;
+}
+.order-items {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 18;
+}
+.rub {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 66px;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 19;
+}
+.order-discount-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 20;
+}
+.order-discount-text {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 21;
+}
+.order-discount-sum-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 78px;
+    height: 33px;
+    color: #ff3333;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 22;
+}
+.order-delivery-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 23;
+}
+.order-delivery-text {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 24;
+}
+.order-delivery-sum-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 65px;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 25;
+}
+.line-q6 {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    height: 2px;
+    background: url(../../assets/images/Line6.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 26;
+}
+.total-itog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 27;
+}
+.total-itog-h {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 34px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 28;
+}
+.total-itog-sum {
+    flex-shrink: 0;
+    position: relative;
+    width: 82px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: right;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 29;
+}
+.total-itog-sum-text {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: right;
+}
+.total-itog-currency {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: right;
+}
+.order-button-buy {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 11px;
+    position: relative;
+    min-width: 0;
+    padding: 24px 200px 24px 200px;
+    cursor: pointer;
+    background: #111111;
+    border: none;
+    opacity: 0.25;
+    z-index: 30;
+    overflow: hidden;
+    border-radius: 32px;
+}
+.order-button-buy-text {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: #ffffff;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 31;
+}
+.order-button-buy-img {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../../assets/images/side_arrow.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 32;
+    overflow: hidden;
+}
+.order-total-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 27px;
+    position: absolute;
+    width: 818px;
+    height: 183px;
+    top: 387px;
+    left: 140px;
+    z-index: 96;
+}
+.order-total-h {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 97;
+}
+.order-total-input {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 818px;
+    z-index: 98;
+}
+.order-total-delivery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    position: relative;
+    width: 555px;
+    z-index: 99;
+}
+.order-total-delivery-h {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 27px;
+    z-index: 100;
+}
+.order-total-delivery-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 23px;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 101;
+}
+.order-total-delivery-address-container {
+    flex-shrink: 0;
+    position: relative;
+    width: 555px;
+    height: 56px;
+    cursor: pointer;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    z-index: 102;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.order-total-delivery-address {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 469px;
+    margin: 15px 0 0 24px;
+    z-index: 103;
+}
+.order-total-delivery-address-input {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Poppins, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 104;
+}
+.order-total-delivery-address-h {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #ff3333;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 105;
+}
+.order-total-delivery-index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    position: relative;
+    width: 231px;
+    z-index: 106;
+}
+.order-total-delivery-index {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 27px;
+    z-index: 107;
+}
+.order-total-delivery-index-h {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 23px;
+    top: -0.5px;
+    left: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 108;
+}
+.order-total-delivery-index-text-container {
+    flex-shrink: 0;
+    position: relative;
+    width: 231px;
+    height: 56px;
+    cursor: pointer;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Poppins, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    z-index: 109;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.order-total-delivery-index-text-h {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 73px;
+    margin: 14px 0 0 24px;
+    z-index: 110;
+}
+.order-total-delivery-index-text-h-text {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Poppins, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 111;
+}
+.order-error-message-span {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 21px;
+    color: #ee1d52;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 112;
+}
+.order-userinfo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 27px;
+    position: absolute;
+    width: 459px;
+    height: 274px;
+    top: 602px;
+    left: 140px;
+    z-index: 113;
+}
+.order-userinfo-h {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 114;
+}
+.order-userinfo-h-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 459px;
+    z-index: 115;
+}
+.order-userinfo-email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    position: relative;
+    width: 459px;
+    z-index: 116;
+}
+.order-userinfo-email-h {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 27px;
+    z-index: 117;
+}
+.order-userinfo-email-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 23px;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 118;
+}
+.order-userinfo-number-container {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 56px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    z-index: 119;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.order-userinfo-number-h-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 4px;
+    position: relative;
+    width: 459px;
+    z-index: 120;
+}
+.order-userinfo-number-h {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 27px;
+    z-index: 121;
+}
+.order-userinfo-number-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 23px;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 122;
+}
+.order-userinfo-number-input {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 56px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    z-index: 123;
+    overflow: hidden;
+    border-radius: 12px;
+}

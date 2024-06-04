@@ -1,0 +1,3104 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+
+}
+body {
+    margin: 0;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container {
+    position: relative;
+    width: 1920px;
+    height: 5816px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+.alert {
+    position: relative;
+    width: 1920px;
+    height: 50px;
+    margin: 0 0 0 0;
+    background: #111111;
+    z-index: 261;
+    overflow: hidden;
+}
+
+.discount-login {
+    position: absolute;
+    width: 517px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    transform: translate(-61.64%, -54.17%);
+    z-index: 262;
+}
+.discount-text {
+    position: relative;
+    color: #ffffff;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.frame-11111 {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    left: 1760px;
+    transform: translate(0, -48.75%);
+    z-index: 263;
+    overflow: hidden;
+}
+.readland {
+    flex-shrink: 0;
+    position: relative;
+    height: 31px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 266;
+}
+.frame-3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 536.667px;
+    z-index: 267;
+}
+.frame-4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 6px;
+    position: relative;
+    width: 125px;
+    z-index: 268;
+}
+
+.frame-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 27px 0 0 0;
+    min-width: 0;
+    max-height: 64px;
+    gap: 54px;
+    z-index: 265;
+}
+/* Стилизация списка меню */
+.frame-2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 30px;
+    gap: 32px; /* Расстояние между элементами */
+}
+
+/* Стилизация каждого элемента списка */
+.frame-2 li {
+    position: relative; /* Для позиционирования псевдоэлементов */
+}
+
+/* Стилизация ссылок */
+.frame-2 a {
+    text-decoration: none; /* Убираем подчеркивание */
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 269;
+}
+
+/* Псевдоэлемент для создания линии под текстом */
+.frame-2 a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 0; /* Позиционирование подчеркивания снизу */
+    left: 0; /* Начало подчеркивания слева */
+}
+
+/* Расширяем линию при наведении */
+.frame-2 a:hover::after {
+    width: 100%;
+}
+
+.catalog {
+    height: 30px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    white-space: nowrap;
+    margin-right: 6px; /* Убедитесь, что текст имеет отступ справа */
+    z-index: 269;
+}
+
+.vector-6 {
+    width: 16px;
+    height: 9px;
+    background: url(../../assets/images/icon_fallout.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 271;
+}
+
+.subscription {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 272;
+}
+.new {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 273;
+}
+.sale {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 274;
+}
+.frame-7 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 16px;
+    position: relative;
+    max-width: 470px;
+    height: 64px;
+    padding: 16px 22px 16px 22px;
+    background: #efefef;
+    z-index: 275;
+    overflow: hidden;
+    border-radius: 82px;
+}
+.frame-7 input {
+    position: absolute;
+    width: 470px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+}
+
+.frame-8 {
+    display: flex; /* Гарантирует горизонтальное выравнивание содержимого */
+    cursor: pointer;
+    max-width: 32px;
+    background-color: transparent; /* Для интеграции с полем поиска */
+    border: none; /* Убираем стандартную рамку, если она не нужна */
+}
+
+.frame-8 button {
+    display: flex;
+    border: none; /* Убирает границу */
+    background: none; /* Убирает фон */
+    cursor: pointer; /* Указатель при наведении */
+    width: 32px; /* Ширина кнопки */
+    height: 32px; /* Высота кнопки */
+    padding: 0; /* Убирает внутренние отступы */
+    margin: 0; /* Убирает внешние отступы */
+    outline: none; /* Убирает контур при фокусировке */
+}
+
+
+.vector-9 {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    background: url(../../assets/images/icon_find.png)
+    no-repeat center;
+    background-size: contain;
+    z-index: 277;
+    border: none;
+}
+
+
+.search {
+    flex-shrink: 0;
+    position: relative;
+    width: 158px;
+    height: 30px;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    z-index: 278;
+    overflow: hidden;
+}
+.frame-a {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 18px;
+    position: relative;
+    width: 182px;
+    height: 32px;
+    z-index: 279;
+}
+.favorite-light {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 280;
+}
+.vector-stroke {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+    background: url(../../assets/images/icon_favorite.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 281;
+}
+.box-alt {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+    background: url(../../assets/images/icon_box.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 282;
+}
+.frame-b {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 283;
+    overflow: hidden;
+}
+.vector-c {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+    background: url(../../assets/images/icon_busket.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 284;
+}
+.user {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 285;
+}
+.ellipse-stroke {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+    background: url(../../assets/images/icon_user.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 287;
+}
+
+.rectangle {
+    position: relative;
+    width: 1920px;
+    height: 890px;
+    margin: 27px 0 0 0;
+    background: #f2f0f1;
+}
+.image-photoroom {
+    position: absolute;
+    width: 920px;
+    height: 891px;
+    top: 0;
+    left: 1000px;
+    background: url(../../assets/images/cat.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 260;
+}
+
+.find-books {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 992px;
+    height: 280px;
+    top: 76px;
+    left: 133px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 85px;
+    text-align: left;
+    z-index: 3;
+}
+.innovative-technology {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 699px;
+    height: 59px;
+    top: 381px;
+    left: 133px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    z-index: 4;
+}
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: absolute;
+    width: 280px;
+    height: 69px;
+    top: 474px;
+    left: 133px;
+    padding: 22px 72px 22px 72px;
+    cursor: pointer;
+    background: #111111;
+    border: none;
+    z-index: 5;
+    overflow: hidden;
+    border-radius: 82px;
+}
+.subscribe {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: #ffffff;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+}
+.frame-10 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 42.667px;
+    position: absolute;
+    width: 821.667px;
+    height: 96.333px;
+    top: 639px;
+    left: 133px;
+    z-index: 7;
+}
+.frame-11 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: -2.667px;
+    position: relative;
+    width: 207px;
+    z-index: 8;
+}
+.reviews {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 69px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9;
+}
+.reader-reviews {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 10;
+}
+.line-12 {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 2px;
+    background: url(../../assets/images/vertical_line.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 11;
+}
+.frame-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: -2.667px;
+    position: relative;
+    width: 174px;
+    z-index: 12;
+}
+.books-stock {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 69px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 13;
+}
+.books-in-stock {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 14;
+}
+.line-13 {
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 2px;
+    background: url(../../assets/images/vertical_line.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 15;
+}
+.frame-14 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: -2.667px;
+    position: relative;
+    width: 270px;
+    z-index: 16;
+}
+.happy-customers {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 69px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 17;
+}
+.happy-buyers {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 18;
+}
+.new-15 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 330px;
+    height: 93px;
+    margin: 233px 0 0 794px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 92px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 31;
+}
+.frame-16, .books-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 26px;
+    position: relative;
+    width: 1654px;
+    margin: 56px 0 0 133px;
+    z-index: 34;
+}
+.frame-17 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 15px;
+    position: relative;
+    width: 394px;
+    cursor: pointer;
+    z-index: 35;
+}
+.frame-18 {
+    flex-shrink: 0;
+    position: relative;
+    width: 394px;
+    height: 398px;
+    background: #f0eeed;
+    z-index: 36;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.frame-19 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 81px;
+    z-index: 38;
+}
+.price {
+    flex-shrink: 0;
+    position: relative;
+    width: 81px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 39;
+}
+.price-value {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+}
+.price-symbol {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.96px;
+    text-align: left;
+}
+.servant-cat {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 40;
+}
+.soseki-natsume {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 41;
+}
+.frame-1a {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 17.577px;
+    position: relative;
+    width: 206.465px;
+    z-index: 42;
+}
+.frame-1b {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 7px;
+    position: relative;
+    width: 139.888px;
+    z-index: 43;
+}
+.star {
+    flex-shrink: 0;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: url(../../assets/images/star.png)
+    no-repeat center;
+    background-size: cover;
+    z-index: 44;
+}
+
+.rating {
+    flex-shrink: 0;
+    position: relative;
+    width: 49px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 49;
+}
+.rating-value {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.rating-max {
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.frame-20 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 224px;
+    z-index: 50;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    weight: 170px;
+    height: 50px;
+    padding: 22px 52px 22px 52px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 52;
+}
+.favorite-light-22 {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 53;
+}
+.vector-23 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 1px 0 0 1px;
+    background: url(../../assets/images/icon_favorite.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 54;
+}
+.frame-24 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 15px;
+    position: relative;
+    width: 394px;
+    cursor: pointer;
+    z-index: 55;
+}
+.frame-25 {
+    flex-shrink: 0;
+    position: relative;
+    width: 394px;
+    height: 398px;
+    background: #f0eeed;
+    z-index: 56;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.frame-27 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 73px;
+    z-index: 58;
+}
+.price-28 {
+    flex-shrink: 0;
+    position: relative;
+    width: 73px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 59;
+}
+.price-value-29 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+}
+.price-currency {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.96px;
+    text-align: left;
+}
+.title {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 60;
+}
+.author {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 61;
+}
+.frame-2a {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 17px;
+    position: relative;
+    width: 172px;
+    z-index: 62;
+}
+.frame-2b {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 7px;
+    position: relative;
+    width: 121px;
+    z-index: 63;
+}
+
+.rating-30 {
+    flex-shrink: 0;
+    position: relative;
+    width: 34px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 68;
+}
+.rating-value-31 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.rating-max-32 {
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.frame-33 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 224px;
+    z-index: 69;
+}
+
+.buy-35 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    weight: 170px;
+    height: 50px;
+    padding: 22px 52px 22px 52px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 71;
+}
+.favorite-light-36 {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 72;
+}
+.vector-37 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 1px 0 0 1px;
+    background: url(../../assets/images/icon_favorite.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 73;
+}
+.frame-38 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 15px;
+    position: relative;
+    width: 394px;
+    cursor: pointer;
+    z-index: 74;
+}
+.frame-39 {
+    flex-shrink: 0;
+    position: relative;
+    width: 394px;
+    height: 398px;
+    background: #f0eeed;
+    z-index: 75;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.frame-3b {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 77px;
+    z-index: 77;
+}
+.price-3c {
+    flex-shrink: 0;
+    position: relative;
+    width: 77px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 78;
+}
+.price-value-3d {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+}
+.price-currency-3e {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.96px;
+    text-align: left;
+}
+.title-3f {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 79;
+}
+.author-40 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 80;
+}
+.frame-41 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 17px;
+    position: relative;
+    width: 205px;
+    z-index: 81;
+}
+.frame-42 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 7px;
+    position: relative;
+    width: 139px;
+    z-index: 82;
+}
+
+.rating-48 {
+    flex-shrink: 0;
+    position: relative;
+    width: 48px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 88;
+}
+.rating-value-49 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.rating-max-4a {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 18.929279327392578px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.rating-value-4b {
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 18.929279327392578px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.frame-4c {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 224px;
+    z-index: 89;
+}
+
+.buy-4e {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    weight: 170px;
+    height: 50px;
+    padding: 22px 52px 22px 52px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 91;
+}
+.favorite-light-4f {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 92;
+}
+.vector-50 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 1px 0 0 1px;
+    background: url(../../assets/images/icon_favorite.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 93;
+}
+.frame-51 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 15px;
+    position: relative;
+    width: 394px;
+    cursor: pointer;
+    z-index: 94;
+}
+.frame-52 {
+    flex-shrink: 0;
+    position: relative;
+    width: 394px;
+    height: 398px;
+    background: #f0eeed;
+    z-index: 95;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.frame-54 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 72px;
+    z-index: 97;
+}
+.price-55 {
+    flex-shrink: 0;
+    position: relative;
+    width: 72px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 98;
+}
+.price-value-56 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+}
+.price-currency-57 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.96px;
+    text-align: left;
+}
+.title-58 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 99;
+}
+.author-59 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 100;
+}
+.frame-5a {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 17.577px;
+    position: relative;
+    width: 206.465px;
+    z-index: 101;
+}
+.frame-5b {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 7px;
+    position: relative;
+    width: 139.888px;
+    z-index: 102;
+}
+
+.rating-61 {
+    flex-shrink: 0;
+    position: relative;
+    width: 49px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 108;
+}
+.rating-value-62 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.rating-max-63 {
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.frame-64 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 224px;
+    z-index: 109;
+}
+
+.buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    weight: 170px;
+    height: 50px;
+    padding: 22px 52px 22px 52px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 111;
+}
+.favorite-light-66 {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 112;
+}
+.vector-67 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 1px 0 0 1px;
+    background: url(../../assets/images/icon_favorite.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 113;
+}
+.frame-68 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 290px;
+    height: 69px;
+    margin: 56px 0 0 815px;
+    padding: 21.333px 72px 21.333px 72px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 194;
+    overflow: hidden;
+    border-radius: 80px;
+}
+.go-button {
+    flex-shrink: 0;
+    position: relative;
+    width: 92px;
+    height: 30px;
+    cursor: pointer;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 195;
+}
+.best-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 815px;
+    height: 93px;
+    margin: 72px 0 0 553px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 92.672px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 32;
+}
+.frame-69 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 26px;
+    position: relative;
+    width: 1654px;
+    margin: 56px 0 0 133px;
+    z-index: 114;
+}
+.frame-6b {
+    flex-shrink: 0;
+    position: relative;
+    width: 394px;
+    height: 398px;
+    background: #f0eeed;
+    z-index: 116;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.frame-6d {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 80px;
+    z-index: 118;
+}
+.price-6e {
+    flex-shrink: 0;
+    position: relative;
+    width: 80px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 119;
+}
+.price-value-6f {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+}
+.price-symbol-70 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.96px;
+    text-align: left;
+}
+.book-title {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 120;
+}
+.author-71 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 121;
+}
+.frame-72 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 17.577px;
+    position: relative;
+    width: 206.465px;
+    z-index: 122;
+}
+.frame-73 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 7px;
+    position: relative;
+    width: 140px;
+    z-index: 123;
+}
+.rating-79 {
+    flex-shrink: 0;
+    position: relative;
+    width: 49px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 129;
+}
+.rating-value-7a {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.rating-max-7b {
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.frame-7c {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 224px;
+    z-index: 130;
+}
+.frame-7d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 170px;
+    height: 50px;
+    padding: 21.333px 72px 21.333px 72px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 131;
+    border-radius: 80px;
+}
+.buy-button-7e {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    weight: 170px;
+    height: 50px;
+    padding: 22px 52px 22px 52px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    z-index: 132;
+}
+.favorite-light-7f {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 133;
+}
+.vector-80 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 1px 0 0 1px;
+    background: url(../../assets/images/icon_favorite.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 134;
+}
+.frame-81 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 15px;
+    position: relative;
+    width: 394px;
+    cursor: pointer;
+    z-index: 135;
+}
+.frame-82 {
+    flex-shrink: 0;
+    position: relative;
+    width: 394px;
+    height: 398px;
+    background: #f0eeed;
+    z-index: 136;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.frame-84 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 75px;
+    z-index: 138;
+}
+.price-85 {
+    flex-shrink: 0;
+    position: relative;
+    width: 75px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 139;
+}
+.price-value-86 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+}
+.price-symbol-87 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.96px;
+    text-align: left;
+}
+.book-title-88 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 140;
+}
+.author-89 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 141;
+}
+.frame-8a {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 17.577px;
+    position: relative;
+    width: 206.465px;
+    z-index: 142;
+}
+.frame-8b {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 7px;
+    position: relative;
+    width: 139.888px;
+    z-index: 143;
+}
+
+.rating-91 {
+    flex-shrink: 0;
+    position: relative;
+    width: 49px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 149;
+}
+.rating-value-92 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.rating-max-93 {
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.frame-94 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 224px;
+    z-index: 150;
+}
+.buy-button-95 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    weight: 170px;
+    height: 50px;
+    padding: 22px 52px 22px 52px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    z-index: 151;
+}
+.buy-button-96 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    weight: 170px;
+    height: 50px;
+    padding: 22px 52px 22px 52px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    z-index: 152;
+}
+.favorite-light-97 {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 153;
+}
+.vector-98 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 1px 0 0 1px;
+    background: url(../../assets/images/icon_favorite.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 154;
+}
+.frame-99 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 15px;
+    position: relative;
+    width: 394px;
+    cursor: pointer;
+    z-index: 155;
+}
+.frame-9a {
+    flex-shrink: 0;
+    position: relative;
+    width: 394px;
+    height: 398px;
+    background: #f0eeed;
+    z-index: 156;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.frame-9c {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 86px;
+    z-index: 158;
+}
+.price-9d {
+    flex-shrink: 0;
+    position: relative;
+    width: 86px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 159;
+}
+.price-value-9e {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+}
+.price-symbol-9f {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.96px;
+    text-align: left;
+}
+.book-title-a0 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 160;
+}
+.author-a1 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 33px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 161;
+}
+.frame-a2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 17.577px;
+    position: relative;
+    width: 174.465px;
+    z-index: 162;
+}
+.frame-a3 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 7px;
+    position: relative;
+    width: 107.888px;
+    z-index: 163;
+}
+
+.star-a8 {
+    flex-shrink: 0;
+    position: relative;
+    width: 49px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 168;
+}
+.number {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.half {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 18.929279327392578px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.number-a9 {
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 18.929279327392578px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.frame-aa {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 224px;
+    z-index: 169;
+}
+.buy-button-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    padding: 22px 52px 22px 52px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    z-index: 170;
+}
+.buy-ab {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 15px;
+    color: #000000;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 171;
+}
+.favorite-light-ac {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 172;
+}
+.vector-ad {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 1px 0 0 1px;
+    background: url(../../assets/images/icon_favorite.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 173;
+}
+.frame-ae {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 15px;
+    position: relative;
+    width: 394px;
+    cursor: pointer;
+    z-index: 174;
+}
+.frame-af {
+    flex-shrink: 0;
+    position: relative;
+    width: 394px;
+    height: 398px;
+    background: #f0eeed;
+    z-index: 175;
+    overflow: hidden;
+    border-radius: 26px;
+}
+
+.frame-b1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 81px;
+    z-index: 177;
+}
+.price-b2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 81px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 178;
+}
+.price-value-b3 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.96px;
+    text-align: left;
+}
+.price-currency-b4 {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40.96px;
+    text-align: left;
+}
+.book-title-b5 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 179;
+}
+.author-b6 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 34px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 26.666667938232422px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 180;
+}
+.frame-b7 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 17.577px;
+    position: relative;
+    width: 206.465px;
+    z-index: 181;
+}
+.frame-b8 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 7px;
+    position: relative;
+    width: 139.888px;
+    z-index: 182;
+}
+
+.rating-be {
+    flex-shrink: 0;
+    position: relative;
+    width: 49px;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 188;
+}
+.half-bf {
+    position: relative;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.number-c0 {
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.32px;
+    text-align: left;
+}
+.frame-c1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 22px;
+    position: relative;
+    width: 224px;
+    z-index: 189;
+}
+.frame-c2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 170px;
+    height: 50px;
+    padding: 22px 72px 22px 72px;
+    z-index: 190;
+}
+.buy-button-c3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    weight: 170px;
+    height: 50px;
+    padding: 22px 52px 22px 52px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 191;
+}
+.favorite-light-c4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 192;
+}
+.vector-c5 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 1px 0 0 1px;
+    background: url(../../assets/images/icon_favorite.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 193;
+}
+.frame-c6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 290px;
+    height: 69px;
+    margin: 47px 0 0 814px;
+    padding: 21.333px 72px 21.333px 72px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 196;
+    overflow: hidden;
+    border-radius: 82.667px;
+}
+.button-c7 {
+    flex-shrink: 0;
+    position: relative;
+    width: 93px;
+    height: 28px;
+    cursor: pointer;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 197;
+}
+.frame-c8 {
+    position: relative;
+    width: 1652px;
+    height: 1099px;
+    margin: 72px 0 0 134px;
+    font-size: 0;
+    background: #efefef;
+    z-index: 198;
+    overflow: hidden;
+    border-radius: 55px;
+}
+.genre-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 851px;
+    height: 93px;
+    margin: 70px 0 0 401px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 92.672px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 199;
+}
+.frame-c9 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 27px;
+    position: relative;
+    width: 1481px;
+    margin: 64px 0 0 86px;
+    z-index: 200;
+}
+.frame-ca {
+    position: relative;
+    width: 542px;
+    height: 385px;
+    background: #ffffff;
+    z-index: 201;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 26px;
+}
+.image-traced {
+    position: absolute;
+    width: 68.73%;
+    height: 103.03%;
+    top: 5.28%;
+    left: 46.13%;
+    background: url(../../assets/images/illustration_chehov.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 203;
+}
+.genre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 58px;
+    top: 35.667px;
+    left: 48px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 57.92px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 202;
+}
+.frame-cb {
+    position: relative;
+    width: 912px;
+    height: 385px;
+    background: #ffffff;
+    z-index: 208;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 26px;
+}
+.image-traced-cc {
+    position: absolute;
+    width: 45.83%;
+    height: 92.65%;
+    top: 7.35%;
+    left: 54.2%;
+    background: url(../../assets/images/illustration_detective.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 210;
+}
+.genre-cd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 70px;
+    top: 29.667px;
+    left: 48px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 69.504px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 209;
+}
+.frame-ce {
+    position: relative;
+    width: 912px;
+    height: 385px;
+    background: #ffffff;
+    z-index: 204;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 26px;
+}
+.image-traced-cf {
+    position: absolute;
+    width: 406px;
+    height: 375px;
+    top: 26px;
+    left: 512px;
+    background: url(../../assets/images/illustration_fantasy.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 206;
+}
+
+.genre-d1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 70px;
+    top: 29.667px;
+    left: 48px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 69.504px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 205;
+}
+.frame-d2 {
+    position: relative;
+    width: 542px;
+    height: 385px;
+    background: #ffffff;
+    z-index: 211;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 26px;
+}
+.image-traced-d3 {
+    position: absolute;
+    width: 55.84%;
+    height: 100.17%;
+    top: 8.65%;
+    left: 52.09%;
+    background: url(../../assets/images/illustration_poetry.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 212;
+}
+.genre-d4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 58px;
+    top: 35.667px;
+    left: 48px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 57.92px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 213;
+}
+.happy-customers-d5 {
+    display: block;
+    position: relative;
+    height: 93px;
+    margin: 72px 0 0 133px;
+    color: #111111;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 92.672px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 33;
+}
+.frame-d6 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 27px;
+    position: relative;
+    width: 1654px;
+    margin: 0 0 0 133px;
+    z-index: 214;
+}
+.frame-d7 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap: 456px;
+    position: relative;
+    width: 533px;
+    height: 320px;
+    padding: 37px 42px 37px 42px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 215;
+    overflow: hidden;
+    border-radius: 26px;
+}
+.frame-d8 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+    min-width: 0;
+    z-index: 216;
+}
+.frame-d9 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 20px;
+    position: relative;
+    z-index: 217;
+}
+.frame-da {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 182px;
+    z-index: 218;
+}
+
+.frame-e0 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    z-index: 224;
+}
+.frame-e1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 5.333px;
+    position: relative;
+    width: 152.333px;
+    z-index: 225;
+}
+.customer-name {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 226;
+}
+.frame-e2 {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 227;
+    overflow: hidden;
+}
+.vector-e3 {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin: 3px 0 0 3px;
+    background: url(../../assets/images/confirmed.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 228;
+}
+.customer-review {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 449.333px;
+    height: 150px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    z-index: 229;
+}
+.frame-e4 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap: 456px;
+    position: relative;
+    width: 533px;
+    padding: 37px 42px 37px 42px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 230;
+    overflow: hidden;
+    border-radius: 26px;
+}
+.frame-e5 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+    min-width: 0;
+    z-index: 231;
+}
+.frame-e6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 20px;
+    position: relative;
+    z-index: 232;
+}
+.frame-e7 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 182px;
+    z-index: 233;
+}
+.frame-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    z-index: 239;
+}
+.frame-div-ec {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 5.333px;
+    position: relative;
+    width: 138.333px;
+    z-index: 240;
+}
+.ivan-name-span {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 241;
+}
+.frame-div-ed {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 242;
+    overflow: hidden;
+}
+.vector-div {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin: 3px 0 0 3px;
+    background: url(../../assets/images/confirmed.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 243;
+}
+.quote-span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 449.333px;
+    height: 150px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    z-index: 244;
+}
+.frame-div-ee {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap: 456px;
+    position: relative;
+    width: 533px;
+    padding: 37px 42px 37px 42px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 245;
+    overflow: hidden;
+    border-radius: 26px;
+}
+.frame-div-ef {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+    min-width: 0;
+    z-index: 246;
+}
+.frame-div-f0 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 20px;
+    position: relative;
+    z-index: 247;
+}
+.frame-div-f1 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 182px;
+    z-index: 248;
+}
+.frame-div-f7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    z-index: 254;
+}
+.frame-div-f8 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 5.333px;
+    position: relative;
+    width: 162.333px;
+    z-index: 255;
+}
+.liliya-name-span {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 35px;
+    color: #111111;
+    font-family: Lora, var(--default-font-family);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 34.56px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 256;
+}
+.frame-div-f9 {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 257;
+    overflow: hidden;
+}
+.vector-div-fa {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin: 3px 0 0 3px;
+    background: url(../../assets/images/confirmed.png)
+    no-repeat center;
+    background-size: 100% 100%;
+    z-index: 258;
+}
+.quote-span-fb {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 450px;
+    height: 150px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lora, var(--default-font-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    z-index: 259;
+}
+.rectangle-div {
+    position: absolute;
+    width: 1920px;
+    height: 162px;
+    top: 1062px;
+    left: 0;
+    background: #111111;
+    z-index: 19;
+}
+.frame-div-fc {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 96px;
+    position: absolute;
+    width: 1928px;
+    height: 50px;
+    top: 1119px;
+    left: 50%;
+    transform: translate(-49.98%, 0);
+    z-index: 20;
+}
+.group-div {
+    flex-shrink: 0;
+    position: relative;
+    width: 272px;
+    height: 30px;
+    z-index: 21;
+}
+.detectives-span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 22;
+}
+.classic-span {
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    height: 30px;
+    z-index: 23;
+}
+.prada-logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 24;
+}
+.fantasy-span {
+    flex-shrink: 0;
+    position: relative;
+    width: 208px;
+    height: 43px;
+    z-index: 25;
+    overflow: hidden;
+}
+.prada-logo-div-fd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 69.77%;
+    top: 0.78%;
+    left: calc(50% - 104.17px);
+    color: #ffffff;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 26;
+}
+.non-fiction-span {
+    flex-shrink: 0;
+    position: relative;
+    width: 269px;
+    height: 43px;
+    z-index: 27;
+    overflow: hidden;
+}
+.zara-logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 69.77%;
+    top: 0;
+    left: calc(50% - 134.83px);
+    color: #ffffff;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 28;
+}
+.modern-authors-span {
+    flex-shrink: 0;
+    position: relative;
+    width: 555px;
+    height: 50px;
+    z-index: 29;
+    overflow: hidden;
+}
+.frame-div-fe {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 60%;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: Dela Gothic One, var(--default-font-family);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 30;
+}
+.frame-div-110 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: absolute;
+    width: 11.38%;
+    top: 77.56%;
+    left: 81.68%;
+    z-index: 315;
+}
